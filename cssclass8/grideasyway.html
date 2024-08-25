@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 5% 5% 5% 5%;
+            gap: 1% 1%;
+            margin: 6% 6% 6% 8%;
+            grid-template-areas: 
+            "c1 c2 c3 c3"
+            "c1 c4 c5 c6" 
+            "c7 c8 c5 c9"
+            "c10 c8 c11 c11";
+        }
+        .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11{
+            height: 80px;
+            border: 1px solid black;
+        }
+        .c1{
+            grid-area: c1;
+            background-color: aliceblue;
+        }
+        .c2{
+            grid-area: c2;
+            background-color: aliceblue;
+        }
+        .c3{
+            grid-area: c3;
+            background-color: aliceblue;
+        }
+        .c4{
+            grid-area: c4;
+            background-color: aliceblue;
+        }
+        .c5{
+            grid-area: c5;
+            background-color: aliceblue;
+        }
+        .c6{
+            grid-area: c6;
+            background-color: aliceblue;
+        }
+        .c7{
+            grid-area: c7;
+            background-color: aliceblue;
+        }
+        .c8{
+            grid-area: c8;
+            background-color: aliceblue;
+        }
+        .c9{
+            grid-area: c9;
+            background-color: aliceblue;
+        }
+        .c10{
+            grid-area: c10;
+            background-color: aliceblue;
+        }
+        .c11{
+            grid-area: c11;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="c1">Mansory 1</div>
+        <div class="c2">Responsive</div>
+        <div class="c3">Overlap</div>
+        <div class="c4">fluid</div>
+        <div class="c5">explicitly placed</div>
+        <div class="c6">negative space</div>
+        <div class="c7">flexible breadth</div>
+        <div class="c10">DOM order</div>
+        <div class="c8">Masonry 11</div>
+        <div class="c9">Mansory 111</div>
+        <div class="c11">named tracks</div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(19, 19, 64);
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 5% 5% 5% 5%;
+            gap: 3% 3%;
+            margin: 10% 10% 10% 10%;
+        }
+        .c1{
+            background-color: rgb(86, 20, 86);
+            color: white;
+            border: 6px solid black;
+            grid-column: 1/4;
+            grid-row: 1/2;
+            text-align: center;
+            padding: 50px;
+        }
+        .c2{
+            background-color: rgb(46, 102, 46);
+            color: white;
+            border: 6px solid black;
+            grid-column: 1/2;
+            grid-row: 2/4;
+            text-align: center;
+            padding: 20px;
+        }
+        .c3{
+            background-color: rgb(48, 48, 200);
+            color: white;
+            border: 6px solid black;
+            grid-row: 2/3;
+            grid-column: 2/4;
+            text-align: center;
+            padding: 20px;
+        }
+        .c4{
+            background-color: rgb(48, 48, 200);
+            color: white;
+            border: 6px solid black;
+            grid-row: 3/4;
+            grid-column: 2/3;
+            text-align: center;
+            padding: 20px;
+        }
+        .c5{
+            background-color: rgb(48, 48, 200);
+            color: white;
+            border: 6px solid black;
+            grid-column: 3/4;
+            grid-row: 3/4;
+            text-align: center;
+            padding: 20px;  
+        }
+        .c6{
+            background-color: rgb(86, 20, 86);
+            color: white;
+            border: 6px solid black;
+            grid-column: 1/4;
+            grid-row: 4/5;
+            text-align: center;
+            padding: 20px; 
+        }
+        @media only screen and (width<600px){
+            .c1{
+                grid-column: 1/2;
+                grid-row: 1/2; 
+            }
+            .c2{
+                grid-column: 1/2;
+                grid-row: 2/3; 
+            }  
+            .c2{
+                grid-row: 2/3;
+            grid-column: 1/2;
+            }
+            .c3{
+                grid-row: 3/4;
+            grid-column: 1/2;
+            }
+            .c4{
+                grid-row: 4/5;
+                grid-column: 1/2; 
+            }
+            .c5{
+                grid-row: 5/6;
+                grid-column: 1/2; 
+            }
+            .c6{
+                grid-row: 6/7;
+                grid-column: 1/2;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="c1">header</div>
+        <div class="c2">sidebar</div>
+        <div class="c3">content-1</div>
+        <div class="c4">content-2</div>
+        <div class="c5">content-3</div>
+        <div class="c6">footer</div>
+    </div>
+</body>
+</html>

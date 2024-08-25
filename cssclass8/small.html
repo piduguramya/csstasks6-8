@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 50px 40px 50px 50px;
+            gap: 10px 10px;
+            margin: 60px 100px 60px 100px;
+            grid-template-areas: 
+            "c1 c1 c1"
+            "c2 c3 c3"
+            "c2 c4 c5"
+            "c6 c6 c6"; 
+        }
+        .c1{
+            grid-area: c1;
+            background-color: aliceblue;
+        }
+        .c2{
+            grid-area: c2;
+            background-color: aliceblue;
+        }
+        .c3{
+            grid-area: c3;
+            background-color: aliceblue;
+        }
+        .c4{
+            grid-area: c4;
+            background-color: aliceblue;
+        }
+        .c5{
+            grid-area: c5;
+            background-color: aliceblue;
+        }
+        .c6{
+            grid-area: c6;
+            background-color: aliceblue;
+        }   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="c1">header</div>
+        <div class="c2">sidebar</div>
+        <div class="c3">content-1</div>
+        <div class="c4">content-2</div>
+        <div class="c5">content-3</div>
+        <div class="c6">footer</div>
+    </div>
+</body>
+</html>
